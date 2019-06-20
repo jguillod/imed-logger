@@ -250,8 +250,8 @@
 
         <p class="code-caption">Example usage of level.</p>
     
-    <pre class="prettyprint"><code>	let level = logger.level(); // => returns "info"
-	loggel.level('error'); // => returns logger</code></pre>
+    <pre class="prettyprint"><code>let level = logger.level(); // => returns "info"
+loggel.level('error'); // => returns logger</code></pre>
 
 </div>
 
@@ -305,7 +305,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line121">line 121</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line132">line 132</a>
     </li></ul></dd>
     
 
@@ -417,6 +417,24 @@
 
 
 
+<div class="section-examples">
+<h5>Example</h5>
+
+        <p class="code-caption">Example usage of setThem.</p>
+    
+    <pre class="prettyprint"><code>logger.setTheme({
+  error: "red",
+  warn: ["yellow", "bold"],
+  info: ["cyan", "bold"],
+  verbose: ["blue", "bold"],
+  debug: "magenta",
+  silly: "rainbow"
+};
+
+logger.setTheme({error: ["white", "bold", "bgRed"]})</code></pre>
+
+</div>
+
 </div>
         
             
@@ -467,7 +485,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line189">line 189</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line200">line 200</a>
     </li></ul></dd>
     
 
@@ -614,7 +632,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line222">line 222</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line233">line 233</a>
     </li></ul></dd>
     
 
@@ -775,7 +793,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line173">line 173</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line184">line 184</a>
     </li></ul></dd>
     
 
@@ -910,7 +928,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line141">line 141</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line152">line 152</a>
     </li></ul></dd>
     
 
@@ -1045,7 +1063,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line157">line 157</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line168">line 168</a>
     </li></ul></dd>
     
 
@@ -1182,7 +1200,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line132">line 132</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line143">line 143</a>
     </li></ul></dd>
     
 
@@ -1329,7 +1347,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line212">line 212</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line223">line 223</a>
     </li></ul></dd>
     
 
@@ -1464,7 +1482,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line204">line 204</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line215">line 215</a>
     </li></ul></dd>
     
 
@@ -1554,9 +1572,9 @@
 
         <p class="code-caption">Example usage of silent.</p>
     
-    <pre class="prettyprint"><code>	const { silent: log, debug} = require('imed-logger');
-	log('this message will not be log because silent will be used');
-	debug('this message will be logged as a debug message');</code></pre>
+    <pre class="prettyprint"><code>const { silent: log, debug} = require('imed-logger');
+log('this message will not be log because silent will be used');
+debug('this message will be logged as a debug message');</code></pre>
 
 </div>
 
@@ -1610,7 +1628,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line181">line 181</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line192">line 192</a>
     </li></ul></dd>
     
 
@@ -1745,7 +1763,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line165">line 165</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line176">line 176</a>
     </li></ul></dd>
     
 
@@ -1880,7 +1898,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line149">line 149</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line160">line 160</a>
     </li></ul></dd>
     
 
@@ -1984,7 +2002,7 @@
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Jun 20 2019 12:24:07 GMT+0200 (CEST) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Jun 20 2019 14:33:33 GMT+0200 (CEST) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
