@@ -1,0 +1,31 @@
+{
+	"name": "imed-logger",
+	"version": "0.1.0",
+	"description": "my simple logger",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha",
+		"docs": "npm run generate-docs && npm run show-docs",
+		"generate-docs": "jsdoc --configure jsdoc.json --verbose",
+		"show-docs": "open ./docs/imed-logger/0.1.0/index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jguillod/imed-logger.git"
+	},
+	"keywords": [
+		"logger",
+		"console"
+	],
+	"author": "Joël F Guillod <joel.guillod@imed.ch> (http://imed.ch)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/jguillod/imed-logger/issues"
+	},
+	"homepage": "https://github.com/jguillod/imed-logger#readme",
+	"devDependencies": {
+		"chai": "^4.2.0",
+		"minami": "^1.2.3",
+		"mocha": "^6.1.4"
+	}
+}
