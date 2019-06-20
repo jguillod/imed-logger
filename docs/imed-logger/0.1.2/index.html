@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-imed-logger.html">imed-logger</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#.level">level</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#.setTheme">setTheme</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~assert">assert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~concat">concat</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~debug">debug</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~error">error</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~info">info</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~log">log</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~prefix">prefix</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~silent">silent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~silly">silly</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~verbose">verbose</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-imed-logger.html#~warn">warn</a></span></li>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="readme">
+        <article><h1>imed-logger</h1><p>A small library providing utility methods to log messages into console.</p>
+<h2>Installation</h2><pre class="prettyprint source"><code>npm install imed-logger --save</code></pre><h2>Usage</h2><pre class="prettyprint source"><code>const {
+    error,
+    warn,
+    info,
+    verbose,
+    debug,
+    silly,
+    assert,
+    inspect
+} = require('imed-logger'); // => levels: info, debug, warn, error
+
+const {
+    error,
+    warn
+} = require('imed-logger').level('warn'); // => levels: warn, error</code></pre><p>To disable a method for a module some function use the <code>silent</code> function, e.g.:</p>
+<pre class="prettyprint source"><code>const {
+    silent: info,
+    debug,
+    silent: warn
+} = require('imed-logger'); // => will log on debug() but not on info() nor on warn()
+
+info('this message will not be log because silent is used');
+debug('this message will be logged as a debug message');
+warn('this message will not be log because silent is used');</code></pre><h3>Levels</h3><p>Levels order is :</p>
+<pre class="prettyprint source"><code>error > warn > info > verbose > debug > silly</code></pre><p>Default level is <code>info</code>. You can change level on runtime with:</p>
+<pre class="prettyprint source"><code>logger.level('warn'); // => only warn and error will then actually log to console.</code></pre><p>  or get the current level with:</p>
+<pre class="prettyprint source"><code>logger.level(); // => 'warn'</code></pre><h3>Theme : colors and styles</h3><p>To change default colors, call <code>setTheme</code> with one or more levels colorization</p>
+<pre class="prettyprint source"><code>logger.setTheme({
+    error: [&quot;white&quot;, &quot;bold&quot;, &quot;bgRed&quot;],
+    warn: [&quot;yellow&quot;, &quot;bold&quot;],
+    info: [&quot;cyan&quot;, &quot;bold&quot;],
+    verbose: [&quot;blue&quot;, &quot;bold&quot;],
+    debug: &quot;magenta&quot;,
+    silly: &quot;rainbow&quot;
+};</code></pre><p>For instance, </p>
+<pre class="prettyprint source"><code>logger.setTheme({'silly': ['white', 'bold', 'bgBlue']});
+logger.silly(&quot;a silly message&quot;);</code></pre><p>results in&nbsp;:</p>
+<p><code><span style="color:white;font-weight:bold;background-color:blue">[silly] 2019-6-20 12:01:04</span> a silly message</code></p>
+<p>For more information on text and background colors, styles and extras, see <a href="https://github.com/Marak/colors.js">https://github.com/Marak/colors.js</a>.</p>
+<p>To disable colors you can pass the following arguments in the command line to your application:</p>
+<pre class="prettyprint source"><code>node myapp.js --no-color</code></pre><h2>Tests</h2><pre class="prettyprint source"><code>npm test</code></pre><h2>Documentation</h2><pre class="prettyprint source"><code>npm run docs</code></pre><p>will generate the documentation and open its <code>index.html</code> file. It's a shortcut of:</p>
+<pre class="prettyprint source"><code>npm run generate-docs
+npm run show-docs</code></pre><p>If the index.html file does not show in your browser, edit <code>package.json</code> file and see if version number should be updated in <code>scripts[&quot;show-docs&quot;]</code>, or open file in <code>./docs/imed-logger/&lt;version&gt;/index.html</code> (e.g. <code>./docs/imed-logger/0.1.2/index.html</code>).</p>
+<h2>Contributing</h2><p>No formal styleguide imposed, just take care to maintain the existing coding style.</p>
+<ul>
+<li>Add unit tests for any new or changed functionality.</li>
+<li>Lint and test your code.</li>
+<li>Take special care to comment your code with JSDoc3, see <a href="https://jsdoc.app">jsdoc.app</a>.</li>
+</ul>
+<h2>Release History</h2><ul>
+<li><p>0.1.2 tag correction.<br>--Thu Jun 20 14:06:46 CEST 2019</p>
+</li>
+<li><p>0.1.1 changed the npm run show-docs command.<br>--Thu Jun 20 13:42:39 CEST 2019</p>
+</li>
+<li><p>0.1.0 added <code>setTheme</code> function, and 1st commit to github.<br>--Thu Jun 20 12:07:09 CEST 2019</p>
+</li>
+<li><p>0.0.2 added <code>inspect</code> and <code>assert</code> functions.<br>--Wed Jan 18 2017 10:11:00 GMT+0100 (CET)</p>
+</li>
+<li><p>0.0.1 Initial release.<br>--Fri May 13 2016 19:52:00 GMT+0200 (CEST)</p>
+</li>
+</ul>
+<h2>About me</h2><p>see <a href="http://imed.ch">www.imed.ch</a>.</p>
+<hr>
+<p>© <a href="http://imed.ch">imed.ch</a> - Last modified : Thu Jun 20 11:04:36 CEST 2019</p></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Jun 20 2019 14:08:05 GMT+0200 (CEST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

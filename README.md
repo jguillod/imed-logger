@@ -94,9 +94,7 @@ will generate the documentation and open its `index.html` file. It's a shortcut 
 	npm run generate-docs
 	npm run show-docs
 
-If the index.html file does not show in your browser, edit `package.json` file and see if version number should be updated in `scripts["show-docs"]`, or open file in `./docs/imed-logger/<version>/index.html` (e.g. `./docs/imed-logger/0.1.1/index.html`).
-	
-Try [docs/imed-logger/0.1.1/index.html](docs/imed-logger/0.1.1/index.html).
+If the index.html file does not show in your browser, edit `package.json` file and see if version number should be updated in `scripts["show-docs"]`, or open file in `./docs/imed-logger/<version>/index.html` (e.g. `./docs/imed-logger/0.1.2/index.html`).
 
 
 ## Contributing ##
@@ -108,6 +106,9 @@ No formal styleguide imposed, just take care to maintain the existing coding sty
 - Take special care to comment your code with JSDoc3, see [jsdoc.app](https://jsdoc.app).
 
 ## Release History ##
+
+* 0.1.2 tag correction.  
+  --Thu Jun 20 14:06:46 CEST 2019
 
 * 0.1.1 changed the npm run show-docs command.  
   --Thu Jun 20 13:42:39 CEST 2019
