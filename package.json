@@ -1,13 +1,13 @@
 {
 	"name": "imed-logger",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "my simple logger",
 	"main": "index.js",
 	"scripts": {
 		"test": "mocha",
 		"docs": "npm run generate-docs && npm run show-docs",
 		"generate-docs": "jsdoc --configure jsdoc.json --verbose",
-		"show-docs": "open ./docs/imed-logger/0.1.0/index.html"
+		"show-docs": "node docs/index"
 	},
 	"repository": {
 		"type": "git",
