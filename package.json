@@ -4,6 +4,7 @@
 	"description": "my simple logger",
 	"main": "index.js",
 	"scripts": {
+		"build": "npm test && npm run generate-docs",
 		"test": "mocha",
 		"docs": "npm run generate-docs && npm run show-docs",
 		"generate-docs": "jsdoc --configure jsdoc.json --verbose",

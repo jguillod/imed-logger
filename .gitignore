@@ -1,3 +1,8 @@
+#eliiot
+package-lock.json
+docs/
+!docs/index.js
+
 # Logs
 logs
 *.log

@@ -6,7 +6,7 @@
 	"source": {
 		"include": [ ".", "README.md", "package.json", "test/" ],
 		"includePattern": ".js$",
-		"excludePattern": "(node_modules/|docs|out|DEPRECATED|_template)"
+		"excludePattern": "(imed-logger/node_modules/|docs|out|DEPRECATED|_template)"
 	},
 	"plugins": [
 		"plugins/markdown"
@@ -22,8 +22,6 @@
 		"encoding": "utf8",
 		"private": true,
 		"recurse": true,
-		"template": "./node_modules/minami",
-		"title": "iMed Logger"
-		
+		"template": "./node_modules/minami"		
 	}
 }

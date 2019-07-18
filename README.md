@@ -1,4 +1,8 @@
-# imed-logger
+[![NPM Version][npm-image]][npm-url]
+[![NPM][license-image]](LICENSE)
+[![Build Status][travis-image]][travis-url]
+
+# imed-logger #
 
 
 A small library providing utility methods to log messages into console.
@@ -134,3 +138,8 @@ see [www.imed.ch](http://imed.ch).
 
 
 
+[npm-image]: https://img.shields.io/npm/v/imed-logger.svg
+[npm-url]: https://npmjs.org/package/imed-logger
+[license-image]: https://img.shields.io/github/license/jguillod/imed-logger.svg
+[travis-image]: https://travis-ci.com/jguillod/imed-javascript-finite-state-machine.svg?branch=master
+[travis-url]: https://travis-ci.com/jguillod/imed-logger
