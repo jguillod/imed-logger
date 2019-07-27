@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.com/jguillod/imed-logger.svg?branch=master)](https://travis-ci.com/jguillod/imed-logger)
 [![Dependency Status](https://david-dm.org/jguillod/imed-logger.svg?style=flat)](https://david-dm.org/jguillod/imed-logger)
 [![devDependency Status](https://img.shields.io/david/dev/jguillod/imed-logger.svg?style=flat)](https://david-dm.org/jguillod/imed-logger#info=devDependencies)
-[![NPM](https://img.shields.io/github/license/jguillod/imed-logger.svg)](LICENSE)
+[![License](https://img.shields.io/github/license/jguillod/imed-logger.svg)](LICENSE)
 
 
 # imed-logger #
