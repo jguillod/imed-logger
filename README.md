@@ -1,6 +1,9 @@
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![NPM][license-image]](LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/imed-logger.svg)](https://npmjs.org/package/imed-logger)
+[![Build Status](https://travis-ci.com/jguillod/imed-logger.svg?branch=master)](https://travis-ci.com/jguillod/imed-logger)
+[![Dependency Status](https://david-dm.org/jguillod/imed-logger.svg?style=flat)](https://david-dm.org/jguillod/imed-logger)
+[![devDependency Status](https://img.shields.io/david/dev/jguillod/imed-logger.svg?style=flat)](https://david-dm.org/jguillod/imed-logger#info=devDependencies)
+[![NPM](https://img.shields.io/github/license/jguillod/imed-logger.svg)](LICENSE)
+
 
 # imed-logger #
 
@@ -136,9 +139,3 @@ see [www.imed.ch](http://imed.ch).
 © [imed.ch](http://imed.ch) - Last modified : Thu Jun 20 11:04:36 CEST 2019
 
 
-
-[npm-image]: https://img.shields.io/npm/v/imed-logger.svg
-[npm-url]: https://npmjs.org/package/imed-logger
-[license-image]: https://img.shields.io/github/license/jguillod/imed-logger.svg
-[travis-image]: https://travis-ci.com/jguillod/imed-logger.svg?branch=master
-[travis-url]: https://travis-ci.com/jguillod/imed-logger
